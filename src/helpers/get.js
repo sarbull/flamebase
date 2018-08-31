@@ -15,8 +15,10 @@ module.exports = function(data, req) {
                                     .pop();
       break;
     case 3:
-      response.content = data[req.pathParams[0]].filter(e => e.id == req.pathParams[1])
-                                    .pop()[req.pathParams[2]];
+      response.content = data[req.pathParams[0]]
+                          .filter(e => e.id == req.pathParams[1])
+                          .pop()[req.pathParams[2]];
+      break;
     case 4:
       response.content = data[req.pathParams[0]].filter(e => e.id == req.pathParams[1])
                                     .pop()[req.pathParams[2]]

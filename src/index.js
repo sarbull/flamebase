@@ -16,6 +16,10 @@ let data = {
           image: 'picture-1.jpg'
         }
       ]
+    },
+    {
+      id: 2,
+      images: []
     }
   ]
 };
